@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="menu_document" type="id"/>
+    <item name="menu_new" type="id"/>
+    <item name="menu_open" type="id"/>
+    <item name="menu_save" type="id"/>
+    <item name="menu_saveas" type="id"/>
+    <item name="menu_tools" type="id"/>
+    <item name="menu_find" type="id"/>
+    <item name="menu_share" type="id"/>
+    <item name="menu_settings" type="id"/>
+    <item name="menu_exit" type="id"/>
+    <item name="menu_recent" type="id"/>
+    <item name="menu_fullscreen" type="id"/>
+
+</resources>

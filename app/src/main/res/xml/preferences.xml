@@ -1,0 +1,143 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    
+   	<PreferenceScreen
+		android:title="@string/_general">
+
+		<CheckBoxPreference
+	        android:key="key_word_wrap" 
+	        android:defaultValue="true" 
+	        android:title="@string/pref_word_wrap" 
+	        android:summary="@string/pref_desc_word_wrap" />
+	    
+	    <CheckBoxPreference 
+	        android:summary="@string/pref_desc_check_spelling" 
+	        android:defaultValue="true" 
+	        android:title="@string/pref_check_spelling" 
+	        android:key="key_check_spelling" />
+	    
+	    <CheckBoxPreference 
+	        android:key="key_line_numbers" 
+	        android:defaultValue="false" 
+	        android:title="@string/pref_line_numbers" 
+	        android:summary="@string/pref_desc_line_numbers"/>	    	   
+
+	    <ListPreference
+	        android:key="key_drawer_button_visibility"
+			android:defaultValue="left|right"
+			android:negativeButtonText="@null"
+			android:positiveButtonText="@null"
+			android:entries="@array/pref_list_drawer_button_visibility"
+			android:entryValues="@array/pref_values_drawer_button_visibility"
+	        android:title="@string/pref_drawer_button_visibility"
+	        android:summary="@string/pref_desc_drawer_button_visibility"/>
+
+	</PreferenceScreen>
+	
+   	
+   	<PreferenceScreen
+		android:title="@string/_document">	
+		
+	    <EditTextPreference 
+	        android:capitalize="words" 
+	        android:defaultValue="@string/pref_default_document_folder" 
+	        android:inputType="textCapWords" 
+	        android:key="key_document_folder" 
+	        android:maxLines="1" 
+	        android:selectAllOnFocus="true" 
+	        android:singleLine="true" 
+	        android:title="@string/pref_document_folder" 
+	        android:summary="@string/pref_desc_document_folder"/>  
+	        
+	    <CheckBoxPreference 
+	        android:key="key_autosave" 
+	        android:title="@string/pref_autosave" 
+	        android:summary="@string/pref_desc_autosave" 
+	        android:defaultValue="false"/> 	    
+	        
+	    <CheckBoxPreference 
+	        android:key="key_open_last_document" 
+	        android:title="@string/pref_open_last_document" 
+	        android:summary="@string/pref_desc_open_last_document" 
+	        android:defaultValue="false" />	 	
+	        
+	    <CheckBoxPreference 
+	        android:key="key_clear_history" 
+	        android:defaultValue="false" 
+	        android:title="@string/pref_clear_history" 
+	        android:summary="@string/pref_desc_clear_history"/>		    	    
+		
+	    <CheckBoxPreference 
+	        android:key="key_read_only" 
+	        android:title="@string/pref_read_only" 
+	        android:summary="@string/pref_desc_read_only" 
+	        android:defaultValue="false"/>  
+	        
+	    <ListPreference
+	        android:defaultValue="UTF-8"
+	        android:entries="@array/pref_list_charset"
+	        android:entryValues="@array/pref_values_charset"
+	        android:key="key_charset"
+	        android:negativeButtonText="@null"
+	        android:positiveButtonText="@null"
+	        android:title="@string/pref_charset"
+	        android:summary="@string/pref_desc_charset" />	    	    
+		
+   	</PreferenceScreen>	
+    
+	<PreferenceScreen
+	   android:title="@string/_theme">
+	    
+	    <ListPreference
+	        android:defaultValue="0"
+	        android:entries="@array/pref_list_font_typeface"
+	        android:entryValues="@array/pref_values_font_typeface"
+	        android:key="key_font_typeface"
+	        android:negativeButtonText="@null"
+	        android:positiveButtonText="@null"
+	        android:title="@string/pref_font_typeface"
+	        android:summary="@string/pref_desc_font_typeface" />	    
+	   
+	    <EditTextPreference 
+	        android:inputType="number" 
+	        android:key="key_font_size" 
+	        android:maxLines="1" 
+	        android:selectAllOnFocus="true" 
+	        android:singleLine="true" 
+	        android:title="@string/pref_font_size" 
+	        android:defaultValue="@string/pref_default_font_size" 
+	        android:summary="@string/pref_font_size"/>
+
+        <ListPreference
+            android:defaultValue="0"
+            android:entries="@array/pref_list_font_color"
+            android:entryValues="@array/pref_values_font_color"
+            android:key="key_font_color"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:title="@string/pref_title_font_color"
+            android:summary="@string/pref_description_font_color" />
+
+        <ListPreference
+            android:defaultValue="5"
+            android:entries="@array/pref_list_line_color"
+            android:entryValues="@array/pref_values_line_color"
+            android:key="key_line_color"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:title="@string/pref_title_line_color"
+            android:summary="@string/pref_description_line_color" />
+
+        <ListPreference
+            android:defaultValue="1"
+            android:entries="@array/pref_list_background_color"
+            android:entryValues="@array/pref_values_background_color"
+            android:key="key_background_color"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:title="@string/pref_title_background_color"
+            android:summary="@string/pref_description_background_color" />
+
+	</PreferenceScreen>
+     
+</PreferenceScreen>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="bitshift.wordpad"
+    android:versionCode="23"
+    android:versionName="1.2.23"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+
+    <application
+        android:largeHeap="true"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/_app_name"
+        android:theme="@style/CustomTheme"
+        android:hardwareAccelerated="true">
+        
+        <activity
+            android:name="bitshift.wordpad.MainActivity"
+            android:label="@string/_app_name" 
+            android:configChanges="orientation|screenSize">
+            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+		    
+          	<intent-filter android:icon="@drawable/ic_launcher" android:label="@string/_app_name">
+		        <action android:name="android.intent.action.VIEW" />
+		        <action android:name="android.intent.action.SEND" />
+		        <action android:name="android.intent.action.EDIT" />
+		        <category android:name="android.intent.category.DEFAULT" />
+		        <category android:name="android.intent.category.BROWSEABLE" />
+		        <data android:mimeType="text/*"/>
+    		</intent-filter>
+    		
+        </activity> 
+         		
+        <activity
+            android:name="bitshift.wordpad.SettingsActivity"
+            android:label="@string/_settings"
+            android:parentActivityName="bitshift.wordpad.MainActivity" 
+            android:noHistory="true"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="bitshift.wordpad.MainActivity" />
+        </activity>
+        
+        <activity android:name="bitshift.wordpad.SaveActivity" 
+            android:label="@string/_save" 
+            android:parentActivityName="bitshift.wordpad.MainActivity"
+            android:noHistory="true" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="bitshift.wordpad.MainActivity" />            
+        </activity>
+        
+        <activity android:name="bitshift.wordpad.OpenActivity" 
+            android:label="@string/_open" 
+            android:parentActivityName="bitshift.wordpad.MainActivity"
+            android:noHistory="true" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="bitshift.wordpad.MainActivity" />            
+        </activity>    
+
+    </application>
+    
+
+</manifest>

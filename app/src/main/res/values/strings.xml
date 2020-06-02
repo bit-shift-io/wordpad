@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="_app_name">WordPad</string>
+
+    <string name="_open">Open</string>
+    <string name="_settings">Settings</string>
+    <string name="_save">Save</string>
+    <string name="_save_as">Save As</string>
+    <string name="_share">Share</string>
+    <string name="_find">Find</string>
+	<string name="_new">New</string>
+    <string name="_exit">Exit</string>
+    <string name="_yes">Yes</string>
+    <string name="_no">No</string>
+    <string name="_general">General</string>
+    <string name="_display">Display</string>
+    <string name="_theme">Theme</string>
+    <string name="_document">Document</string>
+    <string name="_document_saved">Document Saved</string>
+    <string name="_document_not_saved">Document NOT Saved</string>
+    <string name="_save_changes">Save changes?</string>  
+    <string name="_file_exists">File Exists</string>
+    <string name="_overwrite_existing_file">Overwrite existing file?</string>
+    <string name="_file_does_not_exist">File does not exist</string>
+  	<string name="_out_of_memory">Out of memory!</string>
+    <string name="_tools">Tools</string>
+    <string name="_documents">Documents</string>
+    <string name="_recent">Recent</string>
+    <string name="_fullscreen">Full Screen</string>
+    <string name="_dialog_file_delete">Delete File</string>
+    <string name="_apply">Apply</string>
+    <string name="_cancel">Cancel</string>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="_app_name">WordPad</string>
+
+    <string name="_open">Otwórz</string>
+    <string name="_settings">Ustawienia</string>
+    <string name="_save">Zapisz</string>
+    <string name="_save_as">Zapisz jako</string>
+    <string name="_share">Wyślij do:</string>
+    <string name="_find">Znajdź</string>
+	<string name="_new">Nowy</string>
+    <string name="_exit">Zakończ</string>
+    <string name="_yes">Tak</string>
+    <string name="_no">Nie</string>
+    <string name="_general">Główne</string>
+    <string name="_display">Wyświetlanie</string>
+    <string name="_theme">Wygląd</string>
+    <string name="_document">Dokument</string>
+    <string name="_document_saved">Dokument zapisany</string>
+    <string name="_document_not_saved">Dokument NIE zapisany</string>
+    <string name="_save_changes">Zapisać zmiany?</string>  
+    <string name="_file_exists">Plik już istnieje</string>
+    <string name="_overwrite_existing_file">Zastąpić istniejący plik?</string>
+    <string name="_file_does_not_exist">Plik nie istnieje</string>
+  	<string name="_out_of_memory">Brak Pamięci !</string>
+
+</resources>
